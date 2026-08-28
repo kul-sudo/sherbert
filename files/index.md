@@ -1,9 +1,9 @@
-summary = "A community of enthusiasts in everything to do with computers or unserious engineering.  Join now."
+summary = "A community of enthusiasts in everything to do with computers and unserious engineering. Join now."
 ---
 # **Free Ammonia Foundation**
 
 This is the official website of the **Free Ammonia Foundation** (**FAF**) --
-a community of enthusiasts in everything to do with computers or
+a community of enthusiasts in everything to do with computers and
 ~unserious~ engineering. We create, game and talk nonsense. It's a
 small, tightly knit and partially guarded group which lends itself
 to nice, *real* interaction. You can become a part of **nh3** too!
@@ -14,11 +14,11 @@ and more recently, a self hosted [Matrix Room](https://matrix.to/#/#general:nh3.
 There you can get a feel for what the **Free Ammonia Foundation** is about -- we would
 love for you to pop in, discuss, chat, and become part of our little corner of the internet!
 
-## Blog
-We host a public blog on **nh3**, meaning anyone can (and is highly encouraged) write and post!
-As long as we think it's even slightly worthwhile we'll merge it into this site.
-Simply make a PR to the [sherbert repo](https://github.com/nh3dev/sherbert)
-or ask us on [Discord](https://discord.gg/f5FVgr7gxX)!  
+## Articles
+We publish *your* articles on **nh3**!  
+Anyone can (and is highly encouraged) to write and post!
+As long as you hold to a reasonable standard of quality we'll review, edit, and merge it into this site.
+Simply make a PR to the [sherbert repo](https://github.com/nh3dev/sherbert) or ask us on [Discord](https://discord.gg/f5FVgr7gxX).
 Changes usually take effect within ~10min after being approved.
 
 ## Projects
