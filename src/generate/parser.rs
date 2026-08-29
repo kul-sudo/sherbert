@@ -130,12 +130,15 @@ impl<'a> Parser {
 				}
 			},
 
-			NodeValue::CodeBlock(NodeCodeBlock { ref literal, .. }) => {
+			NodeValue::CodeBlock(NodeCodeBlock { ref literal, ref info, .. }) => {
+				if info.is_empty() { 
+					return format!("<code><pre>{literal}</pre></code>\n");
+				}
+				
 				let mut src = Vec::new();
-
 				super::syntax::ADAPTER
 					.get().unwrap()
-					.write_highlighted(&mut src, Some("shard"), literal)
+					.write_highlighted(&mut src, Some(info), literal)
 					.unwrap();
 
 				let src = String::from_utf8(src).unwrap();

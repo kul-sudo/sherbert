@@ -15,7 +15,7 @@
 Simple, pragmatic, and non-opinionated functional flavoured imperative language.  
 <!-- more cool things -->
 
-```
+```shard
 // pretty average language :p
 let average = |a: &[u32]|: u32 {
 	loop let (sum, i) = (0, 0) {

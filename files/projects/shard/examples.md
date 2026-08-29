@@ -3,7 +3,7 @@ The following examples assume `libc` is available on the system.
 # Hello World
 `extern` is used to declare the `puts` libc function.  
 `&[T]` is by default a fat pointer, the `raw` keyword is used to convert it to a thin one.
-```
+```shard
 let puts = extern "puts" |str: raw &[u8]|: u32;
 puts("Hello, World!\0");
 ```
@@ -12,7 +12,7 @@ puts("Hello, World!\0");
 **Shard** doesn't have a way to define variadic functions, so we
 have to cheat a *little* by defining `printf` with fixed arguments.  
 `self` is used to so we can recursively call the function we're in.
-```
+```shard
 let printf = extern "printf" |str: raw &[u8], i: u32|: u32;
 
 let fibonacci = |n: u32|: u32 {
@@ -31,7 +31,7 @@ loop let i = 0 {
 
 
 # Bubble Sort
-```
+```shard
 let bubble_sort = |array: &mut [u32]| {
 	loop let i = 0 {
 		if i == array.len => break;
@@ -61,7 +61,7 @@ loop let i = 0 {
 ```
 
 # Newtypes
-```
+```shard
 let Box = |t: type| raw &mut t;
 
 let<T> box = |v: T|: Box(T) {
